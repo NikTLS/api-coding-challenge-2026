@@ -1,0 +1,33 @@
+openapi: 3.0.1
+externalDocs:
+  url: >-
+    https://github.com/NikTLS/api-coding-challenge-2026
+  description: "GitHub Repository"
+info:
+  title: API Coding Challenge 2026
+  description: |
+    You are joining a team that is building a new API to analyze shop URLs. The initial version of the API is in place, but it needs some improvements before it can be shipped.
+  contact:
+    name: NikTLS
+    email: 93604570+NikTLS@users.noreply.github.com
+    url: >-
+      https://github.com/NikTLS/api-coding-challenge-2026
+  version: 1.0.0
+tags:
+  - name: public
+    description: Public facing endpoints.
+paths:
+  /shop-check:
+    get:
+      security: []
+      tags:
+        - public
+      operationId: shop-check
+      summary: Shop Check
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object

@@ -1,0 +1,26 @@
+{
+  "name": "api-coding-challenge-2026",
+  "version": "1.0.0",
+  "description": "API Coding Challenge 2026",
+  "main": "index.cjs",
+  "license": "MIT",
+  "engines": {
+    "node": "22.x"
+  },
+  "entrypoints": {
+    "index": "./src/index.cjs"
+  },
+  "scripts": {
+    "lint": "eslint ./src ./tests",
+    "test": "./node_modules/.bin/cross-env NODE_ENV=test LOG_LEVEL=OFF && ./node_modules/.bin/jest --config jest.config.cjs --maxWorkers=2"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.7.1",
+    "@types/aws-lambda": "^8.10.161",
+    "@types/jest": "^30.0.0",
+    "cross-env": "^10.0.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "jest": "^30.2.0"
+  }
+}
